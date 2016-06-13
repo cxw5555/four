@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="用户"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ee000400" />
+
+    <TextView
+        android:id="@+id/textView_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_user"
+        android:text="标题"
+        android:maxLength="20"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#880360ff" />
+
+    <TextView
+        android:id="@+id/textView_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_label"
+        android:text="支持"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#550000ff" />
+
+    <TextView
+        android:id="@+id/TextView_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_yes"
+        android:layout_alignBottom="@+id/textView_yes"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="70dp"
+        android:text="反对"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#550000ff" />
+
+    <Button
+        android:id="@+id/button_detail"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_label"
+        android:layout_alignBottom="@+id/textView_label"
+        android:layout_alignParentRight="true"
+        android:background="#00ffffff"
+        android:text=">"
+        android:textColor="#880000ff"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

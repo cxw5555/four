@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#368fe9"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="登  录"
+            android:textColor="#ffffff"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/login_name"
+        android:layout_alignRight="@+id/login_name"
+        android:layout_below="@+id/login_name"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/sty_shape"
+        android:hint="@string/mima"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp" />
+
+    <Button
+        android:id="@+id/button_clearinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/login_password"
+        android:layout_below="@+id/login_password"
+        android:background="#00000000"
+        android:text="@string/newUser" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#c8a59681" >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:contentDescription="@string/aaa"
+            android:src="@drawable/qq" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:contentDescription="@string/aaa"
+            android:src="@drawable/weixin" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:contentDescription="@string/aaa"
+            android:src="@drawable/weibo" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/aaa"
+        android:src="@drawable/logo1" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/button_submitinfo"
+        android:layout_alignRight="@+id/button_clearinfo"
+        android:layout_below="@+id/button_submitinfo"
+        android:onClick="login"
+        android:text="@string/login"
+        android:background="#296dec"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/login_name"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/sty_shape"
+        android:ems="10"
+        android:hint="@string/zhanghao"
+        android:paddingLeft="10dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button_submitinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_clearinfo"
+        android:layout_alignBottom="@+id/button_clearinfo"
+        android:layout_alignLeft="@+id/login_password"
+        android:background="#00000000"
+        android:text="@string/wangjimima" />
+
+</RelativeLayout>

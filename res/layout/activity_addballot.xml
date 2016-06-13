@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_weight="0.00"
+        android:background="#368fe9"
+        android:gravity="center"
+        android:text="发布投票"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="23sp" />
+
+    <EditText
+        android:id="@+id/editText_btitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="投票标题"
+        android:singleLine="true"
+        android:maxLength="20"
+        android:textColor="#ff004f85" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_bdetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:ems="10"
+        android:hint="问题详情，举例：我考不上重点高中，是不是还是去技校比较好？"
+        android:inputType="textMultiLine"
+        android:textColor="#ff004ff5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/button_addballot"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#296dec"
+            android:text="确定"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/Button_ballotclear"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#296dec"
+            android:text="清空"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</LinearLayout>

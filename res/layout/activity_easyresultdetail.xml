@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj1"
+    android:orientation="vertical" >
+
+   
+
+    <TextView
+        android:id="@+id/textView_easyresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff00ff88"
+        android:textSize="35sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView_easyresult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/nav1" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView_easyresult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="你选择的是"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff8f" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_easyresult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:text="Te"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button_ok"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toLeftOf="@+id/textView2"
+        android:background="#296dec"
+        android:text="好的"
+        android:textColor="#ffffffff" />
+
+    <Button
+        android:id="@+id/Button_again"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="#296dec"
+        android:text="再来一次"
+        android:textColor="#ffffffff" />
+
+</RelativeLayout>

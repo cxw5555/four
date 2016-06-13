@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj1"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button_loadballot"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#368fe9"
+        android:gravity="center"
+        android:text="@string/ballot"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff88" />
+
+    <ListView
+        android:id="@+id/listView_ballot"
+        android:layout_width="278dp"
+        android:layout_height="312dp"
+        android:layout_above="@+id/button_submitballot"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#ffffffff"
+        android:layout_below="@+id/textView1" >
+    </ListView>
+
+    <Button
+        android:id="@+id/button_submitballot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#296dec"
+        android:text="发布投票"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/button_loadballot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#296dec"
+        android:text="刷新"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+</RelativeLayout>
